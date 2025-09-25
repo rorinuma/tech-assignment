@@ -10,9 +10,7 @@ This is a simple book store app built with React and TypeScript.
 
 ## Getting Started
 
-To get started, you can visit the project on [GithubPages](https://rorinuma.github.io/tech-assignment/).
-
-or clone the repository and run the following commands:
+To get started, you can clone the repository and run the following commands:
 
 ```bash
 npm install
