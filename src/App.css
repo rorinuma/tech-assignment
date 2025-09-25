@@ -144,6 +144,6 @@ main {
 
 @media (max-width: 900px) {
   .tags-container {
-    right: 0px;
+    right: -2.5rem;
   }
 }

@@ -17,6 +17,7 @@ export default function BookCard({
   tags,
 }: BookCardType) {
   if (!title || !author || !date || !price || !tags) {
+    console.error("BookCard is missing required props");
     return null;
   }
 
