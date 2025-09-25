@@ -14,7 +14,7 @@ To get started, you can clone the repository and run the following commands:
 
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
 This will start the development server and open the application in your browser.
