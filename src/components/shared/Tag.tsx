@@ -1,5 +1,15 @@
 import "./Tag.css";
 
-export default function Tag({ name }: { name: string }) {
-  return <button>{name}</button>;
+interface TagProps {
+  name: string;
+  className?: string;
+  onClick?: () => void;
+}
+
+export default function Tag({ name, className, onClick }: TagProps) {
+  return (
+    <button className={`tag-button ${className}`} onClick={onClick}>
+      {name}
+    </button>
+  );
 }

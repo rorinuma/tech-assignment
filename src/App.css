@@ -61,10 +61,13 @@ main {
 
     .tag-filters {
       display: flex;
+      align-items: center;
       position: relative;
-      gap: 0.5rem;
 
       .tag-filter-title {
+        cursor: pointer;
+        padding: 5px;
+
         .tags-arrow {
           display: inline-block;
           width: 0;
@@ -79,6 +82,10 @@ main {
         .tags-arrow.open {
           transform: rotate(180deg);
         }
+      }
+
+      .clear-tags {
+        padding: 5px;
       }
 
       .tags-container {

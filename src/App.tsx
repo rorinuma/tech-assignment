@@ -4,6 +4,7 @@ import type { BookCardType } from "./components/BookCard/BookCard";
 import BookCard from "./components/BookCard/BookCard";
 import { useBookFilters } from "./hooks/useBookFilters";
 import useClickOutside from "./hooks/useClickOutside";
+import Tag from "./components/shared/Tag";
 
 export default function App() {
   const [books, setBooks] = useState<BookCardType[]>([]);
@@ -117,17 +118,18 @@ export default function App() {
               className={`tags-arrow ${tagsModalOpen ? "open" : ""}`}
             ></span>
           </div>
-          <div onClick={clearTags}>clear rules</div>
+          <button className="clear-tags" onClick={clearTags}>
+            clear rules
+          </button>
           {tagsModalOpen && (
             <section className="tags-container" ref={tagsModalRef}>
               {allTags.map((tag) => (
-                <button
+                <Tag
                   key={tag}
                   className={`tag ${selectedTags.includes(tag) ? "selected" : ""}`}
                   onClick={() => toggleTag(tag)}
-                >
-                  {tag}
-                </button>
+                  name={tag}
+                />
               ))}
             </section>
           )}

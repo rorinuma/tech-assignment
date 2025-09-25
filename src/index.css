@@ -6,6 +6,7 @@
 
 button {
   all: unset;
+  cursor: pointer;
 }
 
 :root {
