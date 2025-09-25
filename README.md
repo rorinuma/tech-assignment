@@ -1,3 +1,7 @@
+# Павел Катранов
+
+# Тестовое задание для frontend-разработчика
+
 # Book Store
 
 This is a simple book store app built with React and TypeScript.
