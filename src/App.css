@@ -6,6 +6,7 @@ main {
   max-width: 500px;
   flex-grow: 1;
   margin: 1rem 0;
+  margin: 0 10px;
 
   header {
     text-align: center;
